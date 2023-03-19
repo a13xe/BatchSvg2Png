@@ -1,18 +1,23 @@
-# The code uses the os library to iterate through all files in the specified folder. 
-# For each file that ends with .svg, it reads the SVG file using svg2rlg from svglib and renders it to a PNG image using renderPM from reportlab. 
-# The resulting PNG image is saved to the "output" folder folder with the same filename as the SVG file.
-
-
 import os
-from svglib.svglib import svg2rlg
-from reportlab.graphics import renderPM
+import cairosvg
 
-inputFolderPath = 'input/'
-outputFolderPath = 'output/'
+inputFolder = 'input'
+outputFolder = 'output'
 
-for filename in os.listdir(inputFolderPath):
-    if filename.endswith('.svg'):
-        svg_file = os.path.join(inputFolderPath, filename)
-        drawing = svg2rlg(svg_file)
-        png_file = os.path.join(outputFolderPath, filename[:-4] + '.png')
-        renderPM.drawToFile(drawing, png_file, fmt='PNG')
+# The output PNG files should have a size of 1024x1024 pixels with a scale factor of 1. 
+# You can adjust these parameters as needed.
+outputImgWidth = 1024
+outputImgHeight = 1024
+
+# Create the output folder if it doesn't exist
+if not os.path.exists(outputFolder):
+    os.makedirs(outputFolder)
+
+# Get a list of all SVG files in the input folder
+svg_files = [f for f in os.listdir(inputFolder) if f.endswith('.svg')]
+
+# Loop through the SVG files and convert each one to a PNG file with a transparent background
+for svg_file in svg_files:
+    svg_path = os.path.join(inputFolder, svg_file)
+    png_path = os.path.join(outputFolder, os.path.splitext(svg_file)[0] + '.png')
+    cairosvg.svg2png(url=svg_path, write_to=png_path, output_width=outputImgWidth, output_height=outputImgHeight, scale=1)
