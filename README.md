@@ -15,6 +15,11 @@ It is also capable of handling `multiple SVG` files at once, making it a great t
 Installation
 =======================================================================
 
+`✅ Step 1.` Download and install: 
+
+[GTK-for-Windows-Runtime-Environment-Installer](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/releases/download/2022-01-04/gtk3-runtime-3.24.31-2022-01-04-ts-win64.exe) by [tschoonj](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer)
+
+`✅ Step 2.` Install the required lib:
 ```Bash
 pip3 install -r requirements.txt
 ```
