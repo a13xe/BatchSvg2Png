@@ -5,8 +5,8 @@
 <img src="https://img.shields.io/github/downloads/a13xe/MultipleSvg2Png/total"/>
 </div>
 <div align="center">
-<img src="https://tokei.rs/b1/github/a13xe/MultipleSvg2Png?category=files"/>
-<img src="https://tokei.rs/b1/github/a13xe/MultipleSvg2Png?category=lines"/> 
+<img src="https://tokei.rs/b1/github/a13xe/MultipleSvg2Png?category=files" alt=""/>
+<img src="https://tokei.rs/b1/github/a13xe/MultipleSvg2Png?category=lines" alt=""/> 
 </div>
 
 :framed_picture: MultipleSvg2Png
