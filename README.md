@@ -1,4 +1,4 @@
-:framed_picture: MultipleSvg2Png
+:framed_picture: BatchSvg2Png
 =====================================================================================================================
 
 This program parses SVG files and converts them to PNG files. 
@@ -6,7 +6,7 @@ It is a quick and easy way to create high-quality (`supports any custom size`) r
 It is also capable of handling `multiple SVG` files at once, making it a great tool for batch processing.
 
 <div align="center">
-<img width=98% src="https://github.com/a13xe/MultipleSvg2Png/assets/77492646/c90da7b2-05ac-4069-9f6c-a0473d2baa9e"/> 
+<img width=98% src="https://github.com/a13xe/BatchSvg2Png/assets/77492646/c90da7b2-05ac-4069-9f6c-a0473d2baa9e"/> 
 </div>
 
 
